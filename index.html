@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Volume Of Shapes" />
+    <meta name="description" content="Temperatures" />
     <meta name="keywords" content="ics2o" />
     <meta name="author" content="Lucas Osmond" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <title class="mdl-layout-header">Volume of a Pyramid</title>
+    <title class="mdl-layout-header">Farenheit to Celcius</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -35,7 +35,7 @@
           <div>
             <p>
               <img
-                src="./images/pyramid.png"
+                src="./images/celcius&fahrenheit.png"
                 alt="pyramid"
                 width="18%"
                 height="auto"
@@ -43,12 +43,12 @@
               />
             </p>
             <h2>Formulas</h2>
-            <h3>A = (L x W x H) / 3</h3>
+            <h3>℃ = (℉ - 32) x 5/9</h3>
           </div>
         </table>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>length</p>
+          <p>Degrees Celcius</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
@@ -57,46 +57,12 @@
               id="length-of-pyramid"
               step="0.01"
             />
-            <label class="mdl-textfield__label" for="length-of-pyramid"
-              >length ...</label
+            <label class="mdl-textfield__label" for="celcius"
+              >℃ ...</label
             >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-        <form action="#">
-          <p>width</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="width-of-pyramid"
-              step="0.01"
-            />
-            <label class="mdl-textfield__label" for="width-of-pyramid"
-              >width ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Height</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-pyramid"
-              step="0.01"
-            />
-            <label class="mdl-textfield__label" for="height-of-pyramid"
-              >height ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"

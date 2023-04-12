@@ -10,13 +10,11 @@
  */
 function calculate () {
   // input
-  const length = parseFloat(document.getElementById('length-of-pyramid').value)
-  const width = parseFloat(document.getElementById('width-of-pyramid').value)
-  const height = parseFloat(document.getElementById('height-of-pyramid').value)
+  const fahrenheit = parseFloat(document.getElementById('fahrenheit').value)
 
   // process
-  const volume = (length * width * height)  / 3 
+  const celsius = (fahrenheit-32) * 5/9 
 
   // output
-  document.getElementById('area').innerHTML = 'volume is: ' + volume + ' cm³'
+  document.getElementById('area').innerHTML = 'celsius is: ' + celsius + '℃'
 }
